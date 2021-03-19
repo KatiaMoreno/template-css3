@@ -1,0 +1,50 @@
+/* TEMPLATES-CSS3 Mach 2021 by Katia Moreno*/
+
+h1{
+    text-align: center;
+}
+
+/*********************************/
+/*Formatacao de imagens com legendas*/
+
+    /*tudo que for do <figure> de class "foto-legenda" vai ter esse style abaixo (nome da <tag>.nome da class) */
+    figure.foto-legenda{
+        position: relative; /* ela vai ficar em um aposicao relativa ao code html onde  <figure> e dentro dele vai ter a tag figcaption que tera um posicao absoluta ao pai */
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px black; /*esta e uma pequena sombra na borda*/
+    }
+
+    /*imagem estava vazando da borda, entao seletor abaixo diz: que dentro de figure class foto-legenda <tag> img vai ter o stylo, entao se aumentar ou diminuir o browser a imagen vai diminuir e aumentar automaticamente*/
+    figure.foto-legenda img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*configurando a legenda, ela esta na tag <figcaption> 
+    */
+    figure.foto-legenda figcaption{
+        opacity: 0; /*(opacity vai de 0-1)*/
+        /*vai fazer com que o texto desaparenca temporaria mente, e so aparece quando o mause for passado em cima, porem para isso e necesario criar uma novo seletor (figure.foto-legenda:hover figcaption) com :hover */
+        position:absolute; /* recebeu esta posicao para que a tag <figcaption> fique dentro do tag pai <figure> */
+        top: 0;/*referece a posicao absolute com top 0, porem e necessario que o pai tenha posicao reletiva*/
+
+        background-color: rgba(0,0,0,0.4);/*camada transparente para que o texto seja exibida udando o rgba*/
+        color: #ffffff;
+        /*conf largura e altura abaixo: 
+        vai fazer criar borda de cor petra e transparente dentro da imagem que vai fazer a legenda flutuar dentro da figura*/
+        width: 100%;
+        height: 100%;
+    
+
+        padding: 10px;  /*criou um espaco dentro da legenda quanto maior mas o texto se distanciar da borda*/
+        box-sizing: border-box; /*vai fazer com que o padding nao ultrapasse a borda da figura criando um box dentro da borda */
+        transition: opacity 1s ; /* transition e o tempo que leva para aparecer na tela, entao estou dizendo que o paramentro opacity vai receber uma trasition de 1 segundo. entao quando passar o mouse em cima vai levar 1 segundo para aparecer - 1s= 1segundo*/
+    }
+
+        /*foi criado pois criei um opacity: 0 no seletor figure.foto-legenda figcaption{} 
+        */
+        figure.foto-legenda:hover figcaption{
+            opacity: 1; /*opacity de 1 = 100%*/
+        }
+
+/***************************************************/

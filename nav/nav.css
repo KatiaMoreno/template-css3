@@ -1,0 +1,69 @@
+
+/*MENU********************************/
+
+nav#menu h1{
+    display: none;/*vai esconder porem vai ser util para sistemas SEO de pesquisa*/
+}
+
+/*para que o menu flutue e fique na posicao correta, temos que fazer com que o menu seja um display:block (diplay bloco faz flutuar pela tela)
+*/
+nav#menu{
+    display: block; /*vai fazer flutuar pela tela */
+}
+/*dentro da tag <nav> vou no id"menu" e tudo que estive dentro do ul vai ter o seguinte estilo*/
+nav#menu ul{
+    list-style: none;/*vai tira a bolinha da lista*/
+    text-transform: uppercase; /*colocando o menu em MAIUSCULO*/
+
+    position: absolute;/*quero apenas que a lista flutue pela tela*, para que passe por cima dos documentos */
+    top: -20px;
+    left: 500px;      
+}
+
+/*formatacao para cada item da LISTA, transfomando os item vertical para horizontal*/
+nav#menu li{
+display: inline-block; /*vai fazer, vai fazer que um bloco seja exibido em uma mesma linha*/    
+    background-color: #dddddd;
+    padding: 10px;/*espaco dentro da caixa entre o texto*/
+    margin: 2px;/*vai criar um espaco entre os botoes do menu*/ 
+
+    transition: background-color 1s; /* vai fazer a transisao no background-color quando o mouse passar no menu*/
+
+}
+
+nav#menu li:hover{ /*houver: serve para musar de cor quando o mouse passar*/
+    background-color: #606060;
+}
+
+/*formatando todos os links, na tag <nav> com id:menu e que tenha um link uma ancora <a> vai ter:*/
+nav#menu a{
+    color: #000000;
+    text-decoration: none; /*tira o underline do link*/
+}
+
+/*mudando a cor do menu quando o mouse passar por cima*/
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*END MENU****************************/
+
+/* unvisited link */
+nav#menu a:{
+    color: red;
+  }
+  
+  /* visited link */
+  nav#menu a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  nav#menu a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  nav#menu a:active {
+    color: blue;
+  }

@@ -1,0 +1,59 @@
+/*TABLE**********************************/
+
+
+table#tabelaspec {
+    border: 1px solid #606060; /* criar a tabela so a linha ao redor como um quadrado*/
+
+    /*border-spacing ou border-collapse - vai tirar o espaco da tabela*/
+    /*border-spacing: 0px;/*vai tirar o espaco que foi criado na tabela*/
+    border-collapse: collapse;/*vai tirar o espaco da tabela* /
+
+    /*margin left/right vai deixar a tabela centralizada*/
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+
+table#tabelaspec td {
+    border: 1px solid red; /* criar a linhas dentro da tabela */
+    padding: 10px;/* mais espaco interno dentro da celula da tabela*/
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*formatando cada coluna(celula - left/rigth)*/
+table#tabelaspec td.coluna-esquerda{
+    background-color: #606060;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+
+}
+table#tabelaspec td.coluna-direita{
+    background-color: #cecece;
+    text-align: left;
+}
+
+/*fomatanto o titulo da tabela*/
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 17.33px;
+    font-weight: bold;
+}
+
+/*formatando o <span> que esta no titulo*/
+table#tabelaspec caption span{
+    display: block;/*mostra como bloco flutuate, e vai se desconecta do testo*/
+    float: right;/* como o diplay in bloco vou dizer que vai flutuar a direita*/
+    color: black;
+    font-size: 10.66px ;
+    margin-top: 10px;/*vai fazer que o texto encoste na tabela movendo para baixo*/
+}
+
+
+
+
+/*END TABLE*******************************/

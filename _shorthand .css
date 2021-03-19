@@ -1,0 +1,80 @@
+/*shorthand - Tem que seguir essas sequencias */
+ 
+/******************************/
+
+/*FONT Property*/
+/*
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+*/
+    .font{
+        font: italic small-caps bold 12px/30px Georgia, serif;
+    }
+/******************************/
+
+/*BACKGROUND Property*/
+/*
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+*/
+    .background {
+        background: rgb(204, 167, 238) url("../img/katia/katia-150.jpg") no-repeat right top;
+        width: 100%;
+        height: 100%;
+    }
+
+/******************************/
+
+
+/*BORDER Property*/
+/*
+border-width
+border-style (required)
+border-color
+*/
+    .border{
+        border: 5px solid red;
+    }
+/******************************/
+
+/*MARGIN Property*/
+/*
+margin-top
+margin-right
+margin-bottom
+margin-left
+*/
+    .margin{
+    margin: 25px 50px 75px 100px;
+    }
+/******************************/
+
+/*PADDING Property*/
+/*
+padding-top
+padding-right
+padding-bottom
+padding-left
+*/
+    .padding{
+        padding: 25px 50px 75px 100px; 
+    }
+
+/******************************/
+
+/*LIST*/
+/*
+list-style-type: circle / square /upper-roman / lower-alpha
+list-style-position: outside / inside
+list-style-image (especifica uma imagem como o marcador do item da lista)
+*/
+
+ul {
+    list-style: square inside url("sqpurple.gif");
+  }

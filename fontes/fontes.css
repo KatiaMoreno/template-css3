@@ -1,0 +1,54 @@
+/*usando para ligunas que tem acentuacao*/
+@charset "UTF-8";
+
+/*Font-face- usado para colocar fontes que voce baixou e que esta em um outro arquivo*/
+@font-face{
+    font-family:'FontLogo' ;
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/*importando uma fonte do googl;e fontes e colocando no <h2> header*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+@font-face{
+    font-family:'Syne-Mono-file' ;
+    src: url("../fontes/_fonts/SyneMono-Regular.ttf");
+}
+
+  /*H1 e H2 -  Configurando os titulo*/
+  header#header-menu h1{
+    color: #5e5e5e;
+    font-size: 30px;
+
+    /*esta fonte e uma fote que foi exportada e esta em uma pasta externa*/
+    font-family: 'FontLogo', Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  
+}
+
+header#header-menu h2{
+    color: red;
+    font-size: 30px;
+    font-family: 'Berkshire Swash', cursive;
+
+
+}
+
+
+header#header-menu h3{
+    color: blue;
+    font-size: 30px;
+    font-family: 'Syne Mono', monospace;
+
+
+}
+
+header#header-menu h4{
+    color: rgb(73, 3, 73);
+    font-size: 30px;
+    font-family: 'Syne-Mono-file';
+
+
+}

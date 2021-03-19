@@ -1,0 +1,169 @@
+/*CSS Padrao- ela ja vem com a tag*/
+
+    html {
+    display: block;
+   }
+   
+   html:focus {
+    outline: none;
+   }
+
+   body {
+    display: block;
+    margin: 8px;
+   }
+   body:focus {
+    outline: none;
+   }
+
+   head {
+    display: none;
+   }
+
+   title {
+    display: none;
+   }
+
+   p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+   }
+
+   h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+   }
+
+   h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+   }
+
+   h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+   }
+
+   div {
+    display: block;
+   }
+
+   link {
+    display: none;
+   }
+
+/** IMAGENS**/
+
+   img {
+    display: inline-block;
+   }
+
+   figure {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+   }
+
+   figcaption {
+    display: block;
+   }
+
+/** TABLE**/
+
+   table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+   }
+
+   tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+   }
+
+   td {
+    display: table-cell;
+    vertical-align: inherit;
+   }
+
+   thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+   }
+
+   tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+   }
+   
+   tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+   }
+   
+   th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+   }   
+
+  
+/** LISTAS**/
+
+   ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+   }
+
+   ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+   }
+
+   li {
+    display: list-item;
+   }
+
+
+
+   /** FORM**/
+   form {
+    display: block;
+    margin-top: 0em;
+   }
