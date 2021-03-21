@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe com mapa de imagem</title>
+
+    <link rel="stylesheet" href="mapa_img.css">
+</head>
+<body>
+
+
+    <section id="conteudo">
+        <img src="img_map/glass-esquema-marcado.jpg" usemap="#meuMapa">
+        <!--MAPA 
+             <area shape="poly" coords="180,211,273,197,280,262,181,271" href="google-glass.html#tela"
+                target="janela">
+                DE IMAGEM-->
+        <map name="meuMapa">
+
+            <area shape="rect" coords="181,202,273,257" href="google-glass.html#tela" target="janela">
+            <area shape="circle" coords="150,240,21" href="google-glass.html#camara" target="janela">
+
+            <area shape="poly" coords="25,141,88,219,85,264,18,169" href="google-glass.html#sensores"
+                target="janela">
+
+            <area shape="circle" coords="75,45,21" href="google-glass.html#gadgets" target="janela">
+
+        </map>
+
+
+        <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+    </section>
+
+    
+</body>
+</html>
