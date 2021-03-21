@@ -32,11 +32,13 @@
         }
 
         article{
-            margin-bottom: 800px; /*para que tenha um espacamento entre os arquivos*/
+            margin-bottom: 800px; /*para que tenha um espacamento entre os arquivos entao nao aparecera no iframe*/
         }
         
-        /*vai fazer a imagem flutuar a direita (display/float) */
-        img.img-dir{
+        /*
+        na tag<img> na classe imagem-direita
+        colquei um diplay block para futuar a imagem flutuar a direita (display/float) */
+        img.imagem-direita{
             display: block;
             float: right;
             margin-left: 5px;
@@ -78,7 +80,7 @@
             <h2>Filme e fotografe a qualquer momento</h2>
         </header>
 
-        <img src="img_map/det-camera.jpg" class="img-dir" alt="camara google">
+        <img src="img_map/det-camera.jpg" class="imagem-direita" alt="camara google">
         <p>
             Com o Google Glass será possível tirar fotos com até 5 megapixels e gravar vídeos com 720 linhas de
             resolução.
