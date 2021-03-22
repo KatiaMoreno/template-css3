@@ -1,0 +1,107 @@
+/*SITUACAO ATUAL: as <li> estao uma embaixo da outro, por padrao da <li> que esta em {display: list-item;}  */
+
+/*OBJETIVO: deixar as <li> uma do LADO a LADO + WIDTH/HEIGHT*/
+
+/*ver video no youtube: https://youtu.be/Yj9-N9BEVeM */
+
+.exemplo{
+    color: #ffffff;
+    font-size: 25px;
+
+    text-align: justify;
+    /* CENTRALIZANDO OBJETO:
+    -quando usamos o apenas o justify a ultima linha nao vai ficar centralizada, para corrigi isso precisamos(informacao abaixo)
+
+    ***********************
+    - para que isso aconta e necesasrio criar uma <li> que receba uma classe que vai manipular esta ultima linha
+
+    <html> inserimos: 
+    <li class="last-line"></li>
+
+    <css> inserimos:
+    .last-line{
+    display: inline-block;
+    width: 100%;}
+    POREM ESTE METODO NAO E LEGAL
+    ***********************
+    
+    ***********************
+    OUTRA OPCAO E USAR APENAS O LADO DO CSS
+    No final da class="exemplo" class pai vamos add um elemento no final e usamos e colocar em estado after(siginifica que quero que depois do exemplo executa ele faca isso)
+    
+    .exemplo:after{
+    content:'';
+    display: inline-block;
+    width: 100%;}
+
+    ***usando o after com o justificado ele permiter centraclizar e caso queira diminuir a janela ela vai permitir sem alterar a possicao dos elementos***
+    
+    ***********************
+
+    /*
+    text-align: center; /*vai fazer com que todos os elementos fiquem centralizados */
+    
+    /*
+    text-align: right; /*vai fazer com que todos os elementos movam para direita */
+
+}
+
+/*USADO PARA justificado e centralizar o elemento */
+.exemplo:after{
+    content:'ESTE E UMA LINHA NOVA CRIADA PARA CENTRALIZAR OS OBJETOS ACIMA'; /*propriedade que vem junto com after, e entre aspa '' pode ser deixado em branco ou colocar qualquer texto ex: 'AMO', se escrever alguma coisa ela vai aparecer*/
+    display: inline-block;
+    width: 100%; /*vai garantir que este content:'' nao apareca, pois se diminuir ele podera ir para a linha de cima e quebra a centralizacao, 
+    ex: width: 10%;
+    
+    */    
+    color: black; /*a cor vai fazer com que o texto no content apareca, por padrao ela vem em branco*/
+    background-color: brown;
+}
+
+.ex-item{
+    width: 20%;
+    height: 150px;
+    border: 1px solid black;
+    display: inline-block;
+    
+    /*    
+   "DISPLAY: INLINE-BLOCK" - COLOCANDO UMA DO LADO DA OUTRA, COM LARGURA E ALTURA
+   - esta propiedade vai fazer que fique um ao lado do outro, com "width" e "height".
+   -ela tambem criar um espaco entre os elemento, isso pq ele ganha um coportamente de uma palavra
+   */
+      
+}
+
+.ex-item-1{
+    background-color: rgb(233, 182, 87);    
+    
+}
+
+.ex-item-2{
+    background-color: rgb(118, 240, 199);
+  
+   
+}
+
+.ex-item-3{
+    background-color: rgb(130, 205, 240);
+}
+
+.ex-item-4{
+    background-color: rgb(219, 127, 247);
+}
+
+.last-line{
+    display: inline-block;
+    width: 100%;
+
+}
+
+h1{
+    text-align: center;
+    background-color: pink;
+}
+
+p{
+    text-align: justify;
+}

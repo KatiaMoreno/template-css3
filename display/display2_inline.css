@@ -1,0 +1,46 @@
+/*SITUACAO ATUAL: as <li> estao uma embaixo da outro, por padrao da <li> que esta em {display: list-item;}  */
+
+/*OBJETIVO: deixar as 3 <li> uma do lado da outra*/
+
+.exemplo{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ex-item{
+    width: 33.33%;/*nao vai fucniona pois display esta inline*/
+    height: 150px; /*nao vai fucniona pois display esta inline*/
+    border: 1px solid black;
+    display: inline;
+    
+    
+
+   /* 
+   "DISPLAY: INLINE" - COLOCANDO UMA DO LADO DA OUTRA: 
+   - esta propiedade vai fazer que fique um ao lado do outro, porem o "width" e "height" acima nao  vai funcionar pois esta propriedade nao permite ter largura e altura
+   -ela tambem criar um espaco entre os elemento, isso pq ele ganha um coportamente de uma palavra, para que isso nao aconteca usamos comentarios <!----> entre as <li>
+   */
+    
+}
+
+.ex-item-1{
+    background-color: rgb(233, 182, 87);   
+}
+
+.ex-item-2{
+    background-color: rgb(118, 240, 199);
+}
+
+.ex-item-3{
+    background-color: rgb(130, 205, 240);
+}
+
+.ex-item-4{
+    background-color: rgb(219, 127, 247);
+}
+
+h1{
+    text-align: center;
+    background-color: pink;
+}

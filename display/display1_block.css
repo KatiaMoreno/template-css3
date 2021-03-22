@@ -1,0 +1,54 @@
+/*SITUACAO ATUAL: as <li> estao uma embaixo da outro, por padrao da <li> que esta em {display: list-item;}  */
+
+/*OBJETIVO: deixar as 3 <li> CENTRALIZADA*/
+
+.exemplo{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ex-item{
+    width: 33.33%;
+    height: 150px;
+    border: 1px solid black;
+    
+    display: block;
+    margin:auto; /*oculpa right e leff *
+    
+   /*     
+   "DISPLAY: block" - COLOCANDO NO CENTRO A IMAGEM - TEM QUE TER ESSAS PROPRIEDADES:
+   display: block;
+   width: 33.33%;
+   margin:auto;
+   ou
+   margin-left:auto;  
+   margin-right:auto;
+
+   - o DISPLAY:BLOCK ocupa a linha todo para que isso nao aconteca temos que colocar (largura)
+   - o display block permite (altura e largura) nos elemento ao contrario do display:inline 
+   - para CENTRALIZAR temos que usar margin:auto; ( que oculpa right e left) ou  margin-left:auto;  
+   margin-right:auto;
+   */   
+}
+
+.ex-item-1{
+    background-color: rgb(233, 182, 87);    
+}
+
+.ex-item-2{
+    background-color: rgb(118, 240, 199);    
+}
+
+.ex-item-3{
+    
+    background-color: rgb(130, 205, 240);
+}
+
+.ex-item-4{
+    background-color: rgb(219, 127, 247);
+}
+
+h1{
+    text-align: center;
+  }
