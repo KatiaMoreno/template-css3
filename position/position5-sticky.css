@@ -1,0 +1,41 @@
+body{
+    padding-top: 125px; /*vai empurra o elemento que esta no <article> para baixo, 95px e o tamanho da logo, mas tambem empurar o header, para isso e necessario que embaixo do position tenha um top:0*/
+}
+.header{
+    
+    background-color: rgb(233, 207, 173);
+    box-sizing: border-box;
+    padding: 20px 40px;
+   
+    border-bottom: 2px solid red;
+    margin-bottom: 30px; /*afastar o texto do header*/
+    position: fixed;/*
+    -somento o valor "fixed" vai fixar o elemento mas os outros elementos ficaram a baixo dele, para isso e necessario usar junto    
+    */
+    top:0; /*vai deixar ele fixed no top*/
+
+
+    width: 100%; /*o vaor fixed - -ele peder a lagura do elemento automaticamente pmente para isso e necessario colocar um width 100%*/
+
+}
+
+.header-logo{
+    height: 35px; /*vai aumentar o tamanho da logo (imagem)*/
+}
+
+/*POSITION: STICKY
+
+ela iniciara conforme codificada no html, ao rola a barra de rolagem ela vai junta e vai para no top que e 0 (zero)*/
+article h1{
+    background-color: magenta;
+    position:sticky;
+    top: 0;
+
+    width: 100%;
+}
+
+p{
+    margin-bottom: 20px; /*espacamento entra cada tag<p>*/
+   
+}
+
