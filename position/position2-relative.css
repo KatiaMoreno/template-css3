@@ -1,0 +1,58 @@
+/*OBJETIVO: pegar a <div> roxa e colocar sobre a vermelha*/
+
+/*a posicao relativa vai se mover conforme a posicao original, para isso precisa usar o (top/bottom/left/rigth*/
+.elemento-exemplo{
+    width: 200px;
+    height: 200px;
+    line-height: 200px; /*centraliza centro da div o texto de forma vertical (cima/baixo)*/
+    text-align: center;/*centraliza centro da div o texto de forma horizontal (esquerda e direita)*/
+    color: #fff;
+    text-transform: uppercase; /*maiuscula text*/
+   
+}
+
+h1{
+    background-color: orchid;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+   
+
+}
+
+.static-el-exemplo-first{
+    background-color: blueviolet;
+    position: relative;
+    left: 400px;
+    z-index: 1;
+    
+  
+
+}
+
+.static-el-exemplo-last{
+    background-color: brown;
+    position: static;
+    top: 0px;
+   
+ 
+}
+
+p{
+
+    background-color: yellow;
+    position: static;
+    left: 0px;
+
+}
+
+ul{
+   left: 30%;
+
+}
+
+img{
+    position: relative;
+    bottom: 0;
+
+}
