@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@font-face{
+    font-family:'FontLogo' ;
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/*importando uma fonte do googl;e fontes e colocando no <h2> header*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+div.tv-radio{
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url('../_imagens/radio-tv.png') no-repeat;
+}
+
+h1#midea-h1{
+    text-align: left;
+    font-family: 'Berkshire Swash', cursive;
+    color: #626262;
+    font-size: 13pt;
+
+  
+   background-color: #dddddd;
+   display: block;
+   width: 50%;
+   margin-right: auto;
+}
+
+audio#musica1{
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 510px;
+    width: 300px;
+    height: 25px;
+}
+
+video#filme1{
+    display: block;
+    position: relative;
+    left: 90px;
+    top: 85px;
+    width: 440px;
+}
+
+audio#musica2{
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 510px;
+    width: 300px;
+    height: 25px;
+}
+
+video#filme2{
+    display: block;
+    position: relative;
+    left: 100px;
+    top: 85px;
+    width: 440px;
+}
+audio#musica3{
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 510px;
+    width: 300px;
+    height: 25px;
+}
+
+video#filme3{
+    display: block;
+    position: relative;
+    left: 90px;
+    top: 85px;
+    width: 440px;
+}
